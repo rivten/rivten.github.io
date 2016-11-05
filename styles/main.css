@@ -248,3 +248,10 @@ a{
 img{
     max-width: 100%;
 }
+
+code.has_jax {
+	font: inherit;
+	font-size: 100%;
+	background: inherit;
+	border: inherit;
+	color: #515151;}
