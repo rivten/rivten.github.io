@@ -10,13 +10,14 @@ author: "Hugo Viala"
 
 Lately, I have been reading a lot of scientific papers about various topics : computer graphics, physics or mesh processing. I found that it is very interesting to have an insight about a particular field and understand what is at stake and where the current research efforts are today.
 
-It stuck me that I could do this while watching [Casey Muratori's video on Papers we Love][1]. I wanted to get people excited about stuff happening in the scientific world and... it is not even that hard to understand really. So today, I give this idea a shot. My goal is to explain a particular scientific article, because of the repercussion it had or the new vision it brought, by outlining the basic scientific arguments it presents and highlighting the important ideas the authors contributed to. I assume that you are somewhat familiar with some concepts (basic linear algebra, ...) and I will try to explain notions as mush as possible, or give references to look up to if you are lost.
+<!-- TODO(hugo) : REFORMULATE -->
+It struck me that I could do this while watching [Casey Muratori's video on Papers we Love][1]. I wanted to get people excited about stuff happening in the scientific world and... it is not even that hard to understand really. So today, I give this idea a shot. My goal is to explain a particular scientific article, because of the repercussion it had or the new vision it brought, by outlining the basic scientific arguments it presents and highlighting the important ideas the authors contributed to. I will assume that you are somewhat familiar with some concepts (basic linear algebra, ...) and I will try to explain notions as much as possible, or give references to look up to if you are lost.
 
-Being the first article study of the series, I chose to present a very famous article publised about 20 years ago on 3D polygon simplification who had a big impact on how the community understand mesh processing nowadays.
+This being the first article study of the series, I chose to present a very famous article published about 20 years ago on 3D polygon simplification who had a big impact on how the community understand mesh processing nowadays.
 
 # Did you say mesh ?
 
-In 3D graphics, for a game or for movie production for example, people usually handle 3-dimensional models of objets they want rendered. Those models are called meshes or polygon meshes and consist -- mostly -- of three things : vertices, edges and faces[^1]. Vertices are basically points with some data associated, typically position, normal and color. Edges are links between vertices and finally faces are triangles with three edges[^2]. This whole data caracterizes a mesh that then will be lighted, shadowed, animated and rendered by a rendering engine.
+In 3D graphics, for a game or for movie production for example, people usually handle 3-dimensional models of objects they want rendered. Those models are called meshes or polygon meshes and consist -- mostly -- of three things : vertices, edges and faces[^1]. Vertices are basically points with some data associated, typically position, normal and color. Edges are links between vertices and finally faces are triangles with three edges[^2]. This whole data caracterizes a mesh that then will be lighted, shadowed, animated and rendered by a rendering engine.
 
 
 ![Here a mesh from a dragon in Skyrim](/images/mesh_simplification/dragon_mesh.png)
@@ -34,12 +35,12 @@ But why is it an important matter ? Well because there is a trade-off to be foun
 
 With this framework in mind, you can now see what is the issue Garland and Heckbert were tackling 20 years ago : how to automate mesh simplification efficiently while not changing the overall structure of the mesh (i.e. minimizing the error between the input mesh and the result of the algorithm). 
 
-More formaly, in the global surface simplification framework, there is a trade-off to be made between having a small amount of vertices but a big deviation from the original mesh, or a small deviation from the original mesh and still a big amount of vertices. Therefore, a rigorous mesh simplification problem is one of the following. Given an input mesh $M_i$ with $V_i$ vertices, an error function $\text{Err}$ (which measures of much two meshes deviates from one another), I want to have a resulting mesh $M_r$ with $V_r$ vertices such that either :
+More formally, in the global surface simplification framework, there is a trade-off to be made between having a small amount of vertices but a big deviation from the original mesh, or a small deviation from the original mesh and still a big amount of vertices. Therefore, a rigorous mesh simplification problem is one of the following. Given an input mesh $M_i$ with $V_i$ vertices, an error function $\text{Err}$ (which measures of much two meshes deviates from one another), I want to have a resulting mesh $M_r$ with $V_r$ vertices such that either :
 
 1. we want to minimize $V_r$ under the constraint $\text{Err}(M_i, M_r) \leq \epsilon$ for a given $\epsilon$
 2. we want to minimize $\text{ Err}(M_i, M_r)$ under the constraint $V_r \leq M$ for a given $M$
 
-In the first statement of the problem, we do not want the resulting mesh to deviate too much from the input mesh, while reducing the number of vertices as mush as possible. Whereas in the second statement, we want to reach a certain amount of maximum vertices and then be as close as possible from the input mesh. Those two statements looks quite the same, but there subtle difference lay in the constraint they set themselves (deviation or vertex count) to achieve their simplification goal.
+In the first statement of the problem, we do not want the resulting mesh to deviate too much from the input mesh, while reducing the number of vertices as much as possible. Whereas in the second statement, we want to reach a certain amount of maximum vertices and then be as close as possible from the input mesh. Those two statements looks quite the same, but there subtle difference lay in the constraint they set themselves (deviation or vertex count) to achieve their simplification goal.
 
 The algorithm proposed by Garland and Heckbert can fullfill both of these statements. I will now explain the algorithm they proposed back then.
 
@@ -57,7 +58,7 @@ $$(v_1, v_2) \rightarrow \bar{v}$$
 
 This is the main operation that will be performed by the algorithm in the course of the processing. There is, however, several issues raised by this operator concerning the topology of the resulting mesh that I will not discuss here[^3].
 
-Now that we have this basic operation in our hand, we are one step closer to the result we are looking for. But there are still some holes to be filled : to which pair do we apply this operator to ? and how to found which optimal resulting vertex $\bar{v}$ to use ?
+Now that we have this basic operation in our hand, we are one step closer to the result we are looking for. But there are still some holes to be filled : to which pair do we apply this operator to ? and how to find which optimal resulting vertex $\bar{v}$ to use ?
 
 # Selecting vertex pairs
 
@@ -67,7 +68,7 @@ The first of the two question is actually pretty simple. We have to give some cr
 2. $\|\|v_1 - v_2\|\| < t$ where t is a threshold parameter
 <!-- comment to avoid vim parser to be confused -->
 
-$t$ is a parameter that we can play with. If $t = 0$, then only the actuals edges of the mesh will be collapsed. This will have the benefit of not touching the overall topology of our polygon, but may cause pairs that would have been interesting to collapse to stay untouched. On the other hand, if $t$ is too big, two vertices that are unrelated - because they are very far away from each other in the initial mesh - may be collapsed, causing the resulting mesh to deviate too much from the original one.
+$t$ is a parameter that we can play with. If $t = 0$, then only the actual edges of the mesh will be collapsed. This will have the benefit of not touching the overall topology of our polygon, but may cause pairs that would have been interesting to collapse to stay untouched. On the other hand, if $t$ is too big, two vertices that are unrelated - because they are very far away from each other in the initial mesh - may be collapsed, causing the resulting mesh to deviate too much from the original one.
 
 
 # Chosing the optimal contraction result from quadric error
@@ -76,12 +77,12 @@ Now we know we want to perform a contraction $(v_1, v_2) \rightarrow \bar{v}$ on
 
 Well, this we do not want the resulting mesh to deviate too much from the original one, we ought to place this new vertex carefully, at a place where it will minimize the overall error between $M_i$ and $M_r$. For this, we need to define what is the error we make by replacing the pair $(v_1, v_2)$ by $\bar{v}$.
 
-Garland and Heckbert first noticed that, considering one vertex $v_1$, each triangle that had $v_1$ as one of its vertices was defining a plane from which $v_1$ was a part of. One could also compute the squared distance from a vertex $v$ and that very plane. Indeed, if $v = (x, y, z, 1)$ and the plane $P$ had the equation $ax + by + cy + d = 0$ then we would have
+Garland and Heckbert first noticed that, considering one vertex $v_1$, each triangle that had $v_1$ as one of its vertices was defining a plane from which $v_1$ was a part of. One could also compute the squared distance from a vertex $v$ and that very plane. Indeed, if $v = (x, y, z, 1)$[^4] and the plane $P$ had the equation $ax + by + cy + d = 0$ then we would have
 
 $$\text{d}(v, P)^2 = v^\top Q_P v$$
 
 <!-- TODO(hugo) : better explanation of what Q is -->
-where $Q_P$ is a 4x4 symmetric matrix representing a quadric matrix of the plane.
+where $\text{d}$ is the Euclidian distance and $Q_P$ is a 4x4 symmetric matrix representing a quadric matrix of the plane.
 
 $$ Q_P = \left ( 
 \begin{array}[cccc]\\
@@ -93,16 +94,16 @@ ad & bd & cd & d^2
 \right)$$
 
 So that computing a distance of a vertex to a plane boils down to matrix multiplication. Quite easy ! 
-We can define $Q_v$ the *quadric matrix of a vertex* $v$ as the sum of all the quadric matrix of the planes of the triangles that have $v$ as a vertex. If $\mathbb{P}$ is the set of the planes supported by triangles of $v$ then
+In order to measure the deviation at a particular vertex, we can define $Q_v$ the *quadric matrix of a vertex* $v$ as the sum of all the quadric matrix of the planes of the triangles that have $v$ as a vertex. If $\mathbb{P}$ is the set of the planes supported by triangles of $v$ then
 
 $$Q_v = \sum_{P \in \mathbb{P}} Q_P$$
 
 
-Now we can define the error of a vertex contraction. Considering the operation $(v_1, v_2) \rightarrow \bar{v}$, we have, as previously defined, a matrix $Q_1$ and a matrix $Q_2$ at hand (one for each vertex). So, for a vertex $\bar{v}$ we can now define the error $\Delta$ by
+Now we can define the overall error of a vertex contraction. Considering the operation $(v_1, v_2) \rightarrow \bar{v}$, we have, as previously defined, a quadric cmatrix $Q_1$ and a matrix $Q_2$ at hand (one for each vertex). So, for a vertex $\bar{v}$ we can now define the error $\Delta$ by
 
 $$\Delta(\bar{v}) = \bar{v}^\top \left( Q_1 + Q_2 \right) \bar{v} = \bar{v}^\top Q_e \bar{v}$$
 
-where $Q_e$ is the final quadric error estimator[^4].
+where $Q_e$ is the final quadric error estimator[^5].
 
 Phew. So we have defined what is the error we do when we contract a pair into one vertex. Now, our goal is to minimize this error, i.e. finding $\bar{v}$ so that $\Delta(\bar{v})$ is minimal.
 
@@ -117,13 +118,13 @@ A & -f \\
 
 then, one can show by computing direct derivative along $x$, $y$ and $z$ that minimizing $\bar{v}^\top Q_e \bar{v}$ is equivalent to solving the system
 
-$$ Ax = f$$
+$$ Av = f$$
 
 Now, either $A$ is invertible, and we directly have our optimal point $\bar{v}$ at hand. If $A$ is not invertible, we can always fall back to some simple, but less precise methods such as chosing $\bar{v} = \left( v_1 + v_2\right) / 2$ for example.
 
 # Algorithm outline
 
-We have now defined all the concepts necessary to provide an algorith. Indeed, we know how to contract vertices, which one to contract, and what the result of the contraction should be. We now need a efficient way to process the mesh. Garland and Heckbert proposed the following steps.
+We have now defined all the concepts necessary to provide an algorithm. Indeed, we know how to contract vertices, which one to contract, and what the result of the contraction should be. We now need an efficient way to process the mesh. Garland and Heckbert proposed the following steps.
 
 1. Compute the quadric matrix $Q$ of each vertex.
 2. Compute the list of all valid pairs of vertices.
@@ -140,9 +141,9 @@ The algorithm presented by Garland and Heckbert in 1997 works quite well and eff
 ![Result of algorithm](/images/mesh_simplification/cow_simplified.png)
 <center>Result of the algorithm</center>
 
-What is so great about this algorithm is that it first proposes to contract pair that do not have a big impact on the resulting mesh (i.e. those that have the lowest cost) while still constantly reducing the amount of vertices.Secondly, the heuristic chosen, the quadric, to evaluate the error made by a compression provides less coarser result for the pair contraction.
+What is so great about this algorithm is that it first proposes to contract pair that do not have a big impact on the resulting mesh (i.e. those that have the lowest cost) while still constantly reducing the amount of vertices.Moreover, the heuristic chosen, the quadric, to evaluate the error made by a compression provides less coarser result for the pair contraction.
 
-Even though this article was published almost 20 years ago, it outlined the basis for most mesh simplification algorithm. For example, we could talk about the article *Structure Aware Mesh Decimation* that takes this very idea of edge contraction, but gives a more refined and precise heuristic to evaluate the error of the contraction.
+Even though this article was published almost 20 years ago, it outlined the basis for most mesh simplification algorithms. For example, we could talk about the article *Structure Aware Mesh Decimation* that takes this very idea of edge contraction, but gives a more refined and precise heuristic to evaluate the error of the contraction.
 
 # References
 
@@ -156,4 +157,5 @@ Even though this article was published almost 20 years ago, it outlined the basi
 [^1]: We can define more generally a mesh in the context of *algebraic topology* with the notion of *simplicial complex*. This theory is called *homology theory* and you might want to learn more about this by googling those terms if you have a strong mathematical background.
 [^2]: Faces in the mesh are not always triangles. They can be quads for examples. Triangles are widly used however.
 [^3]: For more details, you can refer to the original article. Fully explaining the topology issues at stake here is out of the scope of this article.
-[^4]: Notice that this estimator is the sum of the squared distances of the planes of $v_1$ and $v_2$ to $\bar{v}$
+[^4]: We are using homogenous coordinates here. If you are unfamiliar with this concept, you can delve into this [great introduction of homogenous coordinates](http://www.songho.ca/math/homogeneous/homogeneous.html). Basically, we add a forth dimension to a vector to be able to determine whether this point lays at the infinity.
+[^5]: Notice that this estimator is the sum of the squared distances of the planes of $v_1$ and $v_2$ to $\bar{v}$
