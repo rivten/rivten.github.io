@@ -149,7 +149,7 @@ Even though this article was published almost 20 years ago, it outlined the basi
 
 - [The original article by Garland and Heckbert](http://mgarland.org/files/papers/quadrics.pdf)
 - An extention of the article : [Structure Aware Mesh Decimation](https://hal.inria.fr/hal-01111203/file/structure%20(1).pdf)
-- [Meshlab](http://meshlab.sourceforge.net/) : an open-source mesh manipulation mesh in which mesh simplification is available
+- [Meshlab](http://meshlab.sourceforge.net/) : an open-source mesh manipulation tool in which mesh simplification is available
 
 ---
 
