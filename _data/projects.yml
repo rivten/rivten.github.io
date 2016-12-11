@@ -2,9 +2,13 @@
   link: "http://github.com/rivten/gliewer"
   description: "A 3D viewer using only SDL 2.0 and OpenGL 4 (Work in progress)"
 
-- name: vitae
-  link: "http://github.com/rivten/vitae"
-  description: "A small JSON to PDF resume creator (Work in progress)"
+- name: handmadefighter
+  link: "http://github.com/rivten/handmadefighter"
+  description: "A small fighting game inspired by Smash Bros Melee written in the Godot engine (Work in progress)"
+
+#- name: vitae
+#  link: "http://github.com/rivten/vitae"
+#  description: "A small JSON to PDF resume creator (Work in progress)"
 
 #- name: project 3
 #  link: "#"
