@@ -26,9 +26,9 @@ One basic method for this kind of problem is to do the following : let's say you
 
 The question is now : how do we blend the three initials pixels together ?
 
-If we affect weights $w_1$, $w_2$ and $w_3$ to the pixels $p_1$, $p_2$ and $p_3$, one classic solution would be to do a linear blend between those to compute the final pixel $p$
+If we affect weights $w_1$, $w_2$ and $w_3$ to the pixels $X_1$, $X_2$ and $X_3$, one classic solution would be to do a linear blend between those to compute the final pixel $X$
 
-$$ p = w_1 p_1 + w_2 p_2 + w_3 p3 $$
+$$ X = w_1 X_1 + w_2 X_2 + w_3 X_3 $$
 
 But this solution does not work because this generates colors and contrasts in the final texture that are not present in the initial texture.
 
@@ -43,7 +43,7 @@ The histogram of a texture is the curve that gives us the number of pixels that 
 
 So now our problem is : what is the blending operator that preserve the texture's histogram ?
 
-The authors note that there is a special case in which this problem is very easy : if the histogram corresponds to a Gaussian distribution of the colors, then a covariance-preserving operator exactly preserve the histogram. The problem is that, in the general case, the input color does not have an histogram that have a Gaussian distribution.
+The authors note that there is a special case in which this problem is very easy : if the histogram corresponds to a Gaussian distribution of the colors, then a covariance-blending operator exactly preserve the histogram. This is well-known and quite easy to compute. The problem is that, in the general case, the input color does not have an histogram that have a Gaussian distribution.
 
 But, if we could transform our input image so that it has a Gaussian distribution, we could use our histogram-preserving operator to generate a bigger texture. This bigger texture would also have a Gaussian distribution, and then we could use the inverse transformation to go back to the initial histogram, but with the output texture. And we win.
 
@@ -59,27 +59,27 @@ also have a Gaussian distribution. To get our final pixel color $X'$ we just do 
 
 $$ X' = T^{-1}[f(G)] = T^{-1}[f(T(X))]$$
 
-And tadaaa. $f$ is well-know. So our question is now : what exactly are $T$ and $T^{-1}$?
+This will effectively turn the Gaussian distribution into our initial histogram, but on a bigger texture. And we are done. Our histogram-preserving blending operator $f$ is well-know. So our question is now : what exactly are $T$ and $T^{-1}$?
 
-$T$ is an operator that transform our input image so that it has a Gaussian distribution. Solving this is complex and one possible solution is given by an Optimal Transport method. Explaining the Optimal Transport is out of the scope of this post, but we have to know that we need to compute the Optimal Transport of our input image to have the same input, but with a Gaussian distribution.
+$T$ must be an operator that transform our input image so that it has a Gaussian distribution. This is a well-known complex problem and one possible solution is given by an Optimal Transport method. Explaining the Optimal Transport is out of the scope of this post, but we all we have to know is that, with this method, we can transform an image of any histogram into another image with an histogram of our choice, the problem is that this computation is very slow. Yet it could do the job if we use it smartly.
 
 # The final algorithm
 
 Now all elements are in our hand, $f$, $T$, and $T^{-1}$. But, as I said previously, $T$ is very costly to compute. So here is the method that the authors propose :
 
-1. In an offline pass, precompute $G = T(X)$ with the Optimal Transport method. So have the input transformed with a Gaussian distribution already at hand.
+* In an offline pass, precompute $G = T(X)$ with the Optimal Transport method. So have the input transformed with a Gaussian distribution already at hand.
 
 ![Step 1 of the algorithm](/images/histogram_article/hist_step1.png)
 <center>Step 1 of the algorithm</center>
 
-2. Since we will need to compute $T^{-1}$ at runtime and since it is also costly to compute, precompute some value of $T^{-1}$ with the Optimal Transport method and store it in a look-up table.
-3. At runtime, we have $G$ that has a Gaussian distribution, we use $f$ to blend the three initial pixels while preserving the Gaussian distribution $f(G)$, and we use the precomputed look-up table to apply it to $T^{-1}$.
+* Since we will need to compute $T^{-1}$ at runtime and since it is also costly to compute, precompute some value of $T^{-1}$ with the Optimal Transport method and store it in a look-up table.
+* At runtime, we have $G$ that has a Gaussian distribution, we use $f$ to blend the three initial pixels while preserving the Gaussian distribution $f(G)$, and we use the precomputed look-up table to apply it to $T^{-1}$.
 
 ![Step 2 of the algorithm](/images/histogram_article/hist_step2.png)
 <center>Step 2 of the algorithm</center>
 
 
-After the third step, we have effectively computed
+After the third step, we have effectively computed: 
 
 $$T^{-1}[f(G)] = T^{-1}[f(T(X))] = X'$$
 
