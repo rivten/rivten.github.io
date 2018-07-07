@@ -1,18 +1,22 @@
 - name: gliewer
   link: "http://github.com/rivten/gliewer"
-  description: "A 3D viewer using only SDL 2.0 and OpenGL 4 (Work in progress)"
+  description: "A 3D engine using only SDL 2.0 and OpenGL 4 (Work in progress)"
 
-- name: the road east
-  link: "http://gitlab.com/rivten/the-road-east"
-  description: "A prototype for a game I'm building using SDL (Work In Progress)"
+- name: vulkan-demo
+  link: "http://gitlab.com/rivten/vulkan-demo"
+  description: "A Vulkan back-end. To be merged with gliewer."
+
+- name: ray
+  link: "http://github.com/rivten/ray"
+  description: "A simple path tracer"
 
 - name: gardakan
   link: "http://github.com/rivten/gardakan"
   description: "Playing around with TPC and UDP protocol with SDL_Net (Work In Progress)"
 
-- name: handmadefighter
-  link: "http://github.com/rivten/handmadefighter"
-  description: "A small fighting game inspired by Smash Bros Melee written in the Godot engine (Abandonned for now)"
+- name: the road east
+  link: "http://gitlab.com/rivten/the-road-east"
+  description: "A prototype for a game I'm building using SDL (Work In Progress)"
 
 #- name: vitae
 #  link: "http://github.com/rivten/vitae"
