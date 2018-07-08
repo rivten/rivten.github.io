@@ -51,7 +51,7 @@ More formally, if we have an initial pixel of color $X$, that follows of initial
 
 $$ G = T(X)$$
 
-If we have our blending operator $f$ that preserve the Gaussiam histogram, then 
+If we have our blending operator $f$ that preserve the Gaussian histogram, then 
 
 $$ f(G) = f(T(X))$$
 
