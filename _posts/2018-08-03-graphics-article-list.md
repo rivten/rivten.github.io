@@ -98,7 +98,7 @@ Deep Shadow Maps | Lokovic and Veach | [Link](https://graphics.stanford.edu/pape
 Imperfect Shadow Maps for Efficient Computation of Indirect Illumination | Ritschel et al. | [Link](http://resources.mpi-inf.mpg.de/ImperfectShadowMaps/ISM.pdf)
 Real-Time, All-Frequency Shadows in Dynamic Scenes | Annen et al. | [Link](http://discovery.ucl.ac.uk/10005/1/10005.pdf)
 Percentage-Closer Soft Shadows | Fernando | [Link](http://developer.download.nvidia.com/shaderlibrary/docs/shadow_PCSS.pdf)
-Stochastic Soft Shadow Mapping | Liktor et al. | [Link](http://developer.download.nvidia.com/shaderlibrary/docs/shadow_PCSS.pdf)
+Stochastic Soft Shadow Mapping | Liktor et al. | [Link](http://cg.ivd.kit.edu/publications/2015/sssm/StochasticSoftShadows.pdf)
 Variance Shadow Mapping | Myers | [Link](http://developer.download.nvidia.com/SDK/10.5/direct3d/Source/VarianceShadowMapping/Doc/VarianceShadowMapping.pdf)
 
 ## Rendering
@@ -144,11 +144,11 @@ Discrete Laplacians on General Polygonal Meshes | Alexa and Wardetzky | [Link](h
 Title | Authors | Link
 ---|---|----
 As-Rigid-As-Possible Surface Modeling | Sorkine and Alexa | [Link](https://www.igl.ethz.ch/projects/ARAP/arap_web.pdf)
-Bone Glow: An Improved Method for the Assignment of Weights for Mesh Deformation | Wareham and Lasenby | [Link](https://ai2-s2-pdfs.s3.amazonaws.com/5978/2cd676ec09e11fdfd384a58c987b6d046141.pdf)
+Bone Glow: An Improved Method for the Assignment of Weights for Mesh Deformation | Wareham and Lasenby | [Link](https://www.cse.msu.edu/~cse872/papers_files/BoneGlowImprovedWeightAssignment.pdf)
 Convolutional Wasserstein Distances: Efficient Optimal Transportation on Geometric Domains | Solomon et al. | [Link](http://graphics.pixar.com/library/OptimalTransportation/paper.pdf)
 Variational Harmonic Maps for Space Deformation | Ben-Chen et al. | [Link](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.445.1058&rep=rep1&type=pdf)
 Mean Value Coordinates for Closed Triangular Meshes | Ju et al. | [Link](http://www.cs.wustl.edu/~taoju/research/meanvalue.pdf)
-Green Coordinates | Lipman et al. | [Link](https://pdfs.semanticscholar.org/3068/e30cafa39fcff707347dee1076158eea6ab0.pdf)
+Green Coordinates | Lipman et al. | [Link](http://www.math.tau.ac.il/~lipmanya/GC/gc_techrep.pdf)
 Harmonic Coordinates for Character Articulation | Joshi et al. | [Link](http://graphics.pixar.com/library/HarmonicCoordinatesB/paper.pdf)
 Harmonic Coordinates | DeRose and Meyer | [Link](http://graphics.pixar.com/library/HarmonicCoordinates/paper.pdf)
 Local Barycentric Coordinates | Zhang et al. | [Link](http://lgg.epfl.ch/publications/2014/LBC.php)
@@ -171,7 +171,7 @@ Title | Authors | Link
 Surface Parametrization: a Tutorial and Survey | Floater and Hormann | [Link](http://vcg.isti.cnr.it/Publications/2005/FH05/survey_mingle04.pdf)
 Least Squares Conformal Maps for Automatic Texture Atlas Generation | Lévy et al. | [Link](https://members.loria.fr/Bruno.Levy/papers/LSCM_SIGGRAPH_2002.pdf)
 Mesh Parametrization: Theory and Practice | Hormann et al. | [Link](http://alice.loria.fr/publications/papers/2007/SigCourseParam/param-course.pdf)
-Discrete Surface Ricci Flow | Jin et al. | [Link](https://pdfs.semanticscholar.org/f4cb/e6d72868fc9e3b0f02a9051519e902fdbe73.pdf)
+Discrete Surface Ricci Flow | Jin et al. | [Link](https://cvc.cs.stonybrook.edu/Publications/2008/JKLG08/25RicciFlow.pdf)
 
 ## Surface Reconstruction
 
