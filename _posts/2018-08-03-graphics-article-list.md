@@ -23,12 +23,12 @@ Structure and Stability of the 1-Dimensional Mapper | Carrière and Oudot | [Lin
 Title | Authors | Link
 ---|---|----
 Approximating Dynamic Global Illumination in Image Space | Ritschel et al. | [Link](https://people.mpi-inf.mpg.de/~ritschel/Papers/SSDO.pdf)
-Dynamic Ambient Occlusion and Indirect Lighting | Bunnell | [Link](http://http.developer.nvidia.com/GPUGems2/gpugems2_chapter14.html)
+Dynamic Ambient Occlusion and Indirect Lighting | Bunnell | [Link](http://developer.download.nvidia.com/SDK/9.5/Samples/DEMOS/OpenGL/src/dynamic_amb_occ/docs/214_gems2_ch14.pdf)
 Hardware Accelerated Ambient Occlusion Techniques on GPUs | Shanmugan and Arikan | [Link](http://www.okanarikan.com/assets/Papers/SSAO/paper.pdf)
 Neural Network Ambient Occlusion | Holden et al. | [Link](http://www.ipab.inf.ed.ac.uk/cgvu/nnao.pdf)
 Production-Ready Global Illumination | Landis | [Link](http://www.spherevfx.com/downloads/ProductionReadyGI.pdf)
 Bent Normals and Cones in Screen-space | Klehm et al. | [Link](https://www.mpi-inf.mpg.de/~ritschel/Papers/ScreenSpaceBentCones.pdf)
-Volumetric Ambient Occlusion | Szirmay-Kalos et al. | [Link](http://sirkan.iit.bme.hu/~szirmay/ambient8.pdf)
+Volumetric Ambient Occlusion | Szirmay-Kalos et al. | [Link](https://www.researchgate.net/profile/Mateu_Sbert/publication/228912587_Volumetric_Ambient_Occlusion/links/09e4150ca6b7f59c98000000/Volumetric-Ambient-Occlusion.pdf?origin=publication_detail)
 
 ## Computational Geometry
 
@@ -49,7 +49,7 @@ Title | Authors | Link
 ---|---|----
 Efficient Data Structure for Representing and Simplifying Simplicial Complexes in High Dimension | Attali et al. | [Link](https://hal.archives-ouvertes.fr/hal-00579902/document)
 QSplat : A Multiresolution Point Rendering System for Large Meshes | Rusinkeiwicz and Leroy | [Link](http://graphics.stanford.edu/papers/qsplat/qsplat_paper.pdf)
-High Resolution Sparse Voxel DAGs | Kämpe et al. | [Link](http://www.cse.chalmers.se/~kampe/highResolutionSparseVoxelDAGs.pdf)
+High Resolution Sparse Voxel DAGs | Kämpe et al. | [Link](http://www.cse.chalmers.se/~uffe/HighResolutionSparseVoxelDAGs.pdf)
 
 ## Global Illumination
 
@@ -61,7 +61,7 @@ Bi-Directional Path Tracing | Lafortune and Willems | [Link](http://graphics.cs.
 Metropolis Light Transport | Veach and Guibas | [Link](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.88.944&rep=rep1&type=pdf)
 Instant Radiosity | Keller | [Link](http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=21FD348B4727B27F6796FB2A301F17FF?doi=10.1.1.15.240&rep=rep1&type=pdf)
 Lightcuts : A Scalable Approach to Illumination | Walter et al. | [Link](http://www.graphics.cornell.edu/~bjw/lightcuts.pdf)
-Deep Screen Space | Nalbach et al. | [Link](http://people.mpi-inf.mpg.de/~onalbach/DeepScreenSpace/DeepScreenSpace.pdf)
+Deep Screen Space | Nalbach et al. | [Link](http://resources.mpi-inf.mpg.de/DeepScreenSpace/DeepScreenSpace.pdf)
 Interactive Indirect Illumination Using Voxel Cone Tracing | Crassin et al. | [Link](https://research.nvidia.com/sites/default/files/publications/GIVoxels-pg2011-authors.pdf)
 Gradient-Domain Path Tracing | Kettunen et al. | [Link](https://mediatech.aalto.fi/publications/graphics/GPT/kettunen2015siggraph_paper.pdf)
 Manifold Exploration : A Markov Chain Monte Carlo technique for rendering scenes with difficult specular transport | Jakob | [Link](http://www.cs.cornell.edu/projects/manifolds-sg12/manifolds-sg12.pdf)
@@ -73,7 +73,7 @@ Scalable Realistic Rendering with Many-Light Methods | Dachsbacher et al. | [Lin
 Splatting Indirect Illumination | Dachsbacher et al. | [Link](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.104.2043&rep=rep1&type=pdf)
 The State of the Art in Interactive Global Illumination | Ritschel et al. | [Link](https://people.mpi-inf.mpg.de/~ritschel/Papers/GISTAR.pdf)
 A Practical Guide to Global Illumination using Photon Maps | Jensen |[Link](https://graphics.stanford.edu/courses/cs348b-00/course8.pdf)
-Photon Mapping on Programmable Graphics Hardware | Purcell et al. | [Link](https://www.cs.umd.edu/class/spring2005/cmsc828v/papers/photongfx.pdf)
+Photon Mapping on Programmable Graphics Hardware | Purcell et al. | [Link](https://graphics.stanford.edu/papers/photongfx/photongfx.pdf)
 Bidirectional Instant Radiosity | Segovia et al. | [Link](http://artis.imag.fr/Projets/Cyber-II/Publications/SIMP06a.pdf)
 Fast, Arbitrary BRDF Shading for Low-Frequency Lighting Using Spherical Harmonics | Kautz et al. | [Link](http://www0.cs.ucl.ac.uk/staff/J.Kautz/publications/shbrdfRW02.pdf)
 Light Field Rendering | Levoy and Hanrahan | [Link](https://graphics.stanford.edu/papers/light/light-lores-corrected.pdf)
@@ -190,7 +190,7 @@ Delaunay Triangulation Based Surface Reconstruction: Ideas and Algorithms | Caza
 
 Title | Authors | Link
 ---|---|----
-D-Charts: Quasi-Developable Mesh Segmentation | Julius et al. | [Link](https://ai2-s2-pdfs.s3.amazonaws.com/d4af/f9cccb898e94d531fbcf67c08d828e77b65d.pdf)
+D-Charts: Quasi-Developable Mesh Segmentation | Julius et al. | [Link](http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=2E7B46308CB1C4EF9964312755D5374F?doi=10.1.1.225.9963&rep=rep1&type=pdf)
 
 ## Surface Simplification
 
