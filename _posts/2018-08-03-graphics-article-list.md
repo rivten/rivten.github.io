@@ -70,7 +70,7 @@ Robust Monte Carlo Methods for Light Transport Simulation | Veach | [Link](http:
 Real-Time Indirect Illumination with Clustered Visibility | Dong et al. | [Link](https://people.mpi-inf.mpg.de/~ritschel/Papers/ClusteredVisibility.pdf)
 Real-Time Polygonal-Light Shading with Linearly Transformed Consines | Heitz et al. | [Link](https://drive.google.com/file/d/0BzvWIdpUpRx_d09ndGVjNVJzZjA/view)
 Scalable Realistic Rendering with Many-Light Methods | Dachsbacher et al. | [Link](http://cgg.mff.cuni.cz/~jaroslav/papers/2013-mlstar/eg2013star_manylights.pdf)
-Splatting Indirect Illumination | Dachsbacher et al. | [Link](https://pdfs.semanticscholar.org/f73b/52be6bd78d8ecb9682823127f88d23f66853.pdf)
+Splatting Indirect Illumination | Dachsbacher et al. | [Link](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.104.2043&rep=rep1&type=pdf)
 The State of the Art in Interactive Global Illumination | Ritschel et al. | [Link](https://people.mpi-inf.mpg.de/~ritschel/Papers/GISTAR.pdf)
 A Practical Guide to Global Illumination using Photon Maps | Jensen |[Link](https://graphics.stanford.edu/courses/cs348b-00/course8.pdf)
 Photon Mapping on Programmable Graphics Hardware | Purcell et al. | [Link](https://www.cs.umd.edu/class/spring2005/cmsc828v/papers/photongfx.pdf)
@@ -86,7 +86,7 @@ Point-Based Approximate Color Bleeding | Christensen | [Link](http://graphics.pi
 ManyLoDs: Parallel Many-View Level-of-Detail Selection for Real-Time Global Illumination | Holländer et al. | [Link](http://perso.telecom-paristech.fr/~boubek/papers/ManyLoDs/ManyLoDs.pdf)
 Factorized Point Based Global Illumination | Wang et al. | [Link](http://perso.telecom-paristech.fr/~boubek/papers/FPBGI/FPBGI_lowres.pdf)
 Forward Light Cuts : A Scalable Approach to Real-Time Global Illumination | Laurent et al. | [Link](http://perso.telecom-paristech.fr/~boubek/papers/FLC/FLC.pdf)
-Micro-Rendering for Scalable, Parallel Final Gathering | Ritschel et al. | [Link](https://people.mpi-inf.mpg.de/~ritschel/Papers/Microrendering.pdf)
+Micro-Rendering for Scalable, Parallel Final Gathering | Ritschel et al. | [Link](http://jankautz.com/publications/microrenderingSIGAsia09.pdf)
 Quantized Point-Based Global Illumination | Buchholz and Boubekeur | [Link](http://perso.telecom-paristech.fr/~boubek/papers/QPBGI/QPBGI.pdf)
 Wavelet Point-Based Global Illumination | Wang et al. | [Link](http://perso.telecom-paristech.fr/~boubek/papers/WPBGI/WPBGI_lowres.pdf)
 
