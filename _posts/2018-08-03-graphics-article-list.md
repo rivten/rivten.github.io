@@ -77,6 +77,10 @@ Photon Mapping on Programmable Graphics Hardware | Purcell et al. | [Link](https
 Bidirectional Instant Radiosity | Segovia et al. | [Link](http://artis.imag.fr/Projets/Cyber-II/Publications/SIMP06a.pdf)
 Fast, Arbitrary BRDF Shading for Low-Frequency Lighting Using Spherical Harmonics | Kautz et al. | [Link](http://www0.cs.ucl.ac.uk/staff/J.Kautz/publications/shbrdfRW02.pdf)
 Light Field Rendering | Levoy and Hanrahan | [Link](https://graphics.stanford.edu/papers/light/light-lores-corrected.pdf)
+Light Transport Simulation with Vertex Connection and Merging | Georgiev et al. | [Link](http://www.iliyan.com/publications/VertexMerging/VertexMerging_SigAsia2012.pdf)
+Manifold Next Event Simulation | Hanika et al. | [Link](https://jo.dreggn.org/home/2015_mnee.pdf)
+Progressive Photon Mapping | Hachisuka et al. | [Link](http://graphics.ucsd.edu/~henrik/papers/progressive_photon_mapping/progressive_photon_mapping.pdf)
+Simple and Robust Mutation Strategy for Metropolis Light Transport | Kelmen and Szirmay-Kalos | [Link](https://www.cg.tuwien.ac.at/research/publications/2001/Szirmay-2001-METR/TR-186-2-01-18Paper.pdf)
 
 ## Point Based Global Illumination
 
@@ -100,6 +104,7 @@ Real-Time, All-Frequency Shadows in Dynamic Scenes | Annen et al. | [Link](http:
 Percentage-Closer Soft Shadows | Fernando | [Link](http://developer.download.nvidia.com/shaderlibrary/docs/shadow_PCSS.pdf)
 Stochastic Soft Shadow Mapping | Liktor et al. | [Link](http://cg.ivd.kit.edu/publications/2015/sssm/StochasticSoftShadows.pdf)
 Variance Shadow Mapping | Myers | [Link](http://developer.download.nvidia.com/SDK/10.5/direct3d/Source/VarianceShadowMapping/Doc/VarianceShadowMapping.pdf)
+Adaptative Volumetric Shadow Maps | Salvi et al. | [Link](https://software.intel.com/sites/default/files/salvi_avsm_egsr2010.pdf)
 
 ## Rendering
 
@@ -118,6 +123,8 @@ Practical Animation of Liquids | Foster and Fedkiw | [Link](http://physbam.stanf
 Large Steps in Cloth Simulation | Baraff and Witkin | [Link](https://www.cs.cmu.edu/~baraff/papers/sig98.pdf)
 Light Scattering from Human Hair Fibers | Marschner et al. | [Link](http://www.graphics.stanford.edu/papers/hair/hair-sg03final.pdf)
 Stable Fluids | Stam | [Link](http://www.dgp.toronto.edu/people/stam/reality/Research/pdf/ns.pdf)
+Smoothed Particle Hydrodynamics on GPUs | Harada et al. | [Link](http://www.inf.ufrgs.br/cgi2007/cd_cgi/papers/harada.pdf)
+Fast Corotated FEM using Operator Splitting | Kugelstadt et al. | [Link](https://animation.rwth-aachen.de/media/papers/fast-corotated-fem-using-operator-splitting/2018-SCA-FastCoroted.pdf)
 
 ## Remeshing
 
@@ -163,6 +170,7 @@ GPU-assisted Positive Mean Value Coordinates for Mesh Deformations | Lipman et a
 Spatial Deformation Transfer | Ben-Chen et al. | [Link](http://www.cs.technion.ac.il/~gotsman/AmendedPubl/Miri/SpatialDeformationTransfer.pdf)
 Deformation Transfer for Triangle Meshes | Sumner and Popovic | [Link](http://people.csail.mit.edu/sumner/research/deftransfer/Sumner2004DTF.pdf)
 Mesh Editing with Poisson-Based Gradient Field Manipulation | Yu et al. | [Link](http://www.cs.jhu.edu/~misha/Fall07/Papers/Yu04.pdf)
+Real-time Skeletal Skinning with Optimized Centers of Rotation | Le and Hodgins | [Link](https://s3-us-west-1.amazonaws.com/disneyresearch/wp-content/uploads/20160705174939/Real-time-Skeletal-Skinning-with-Optimized-Centers-of-Rotation-Paper.pdf)
 
 ## Surface Parametrization
 
@@ -172,6 +180,7 @@ Surface Parametrization: a Tutorial and Survey | Floater and Hormann | [Link](ht
 Least Squares Conformal Maps for Automatic Texture Atlas Generation | Lévy et al. | [Link](https://members.loria.fr/Bruno.Levy/papers/LSCM_SIGGRAPH_2002.pdf)
 Mesh Parametrization: Theory and Practice | Hormann et al. | [Link](http://alice.loria.fr/publications/papers/2007/SigCourseParam/param-course.pdf)
 Discrete Surface Ricci Flow | Jin et al. | [Link](https://cvc.cs.stonybrook.edu/Publications/2008/JKLG08/25RicciFlow.pdf)
+Scalable Locally Injective Mappings | Rabinovich et al. | [Link](http://igl.ethz.ch/projects/slim/SLIM2017.pdf)
 
 ## Surface Reconstruction
 
@@ -205,6 +214,14 @@ Title | Authors | Link
 ---|---|----
 A Thousand Ways to Pack the Bin - A Practical Approach to Two-Dimensional Rectangle Bin Packing | Jylänki | [Link](http://clb.demon.fi/files/RectangleBinPack.pdf)
 
+## Volume Rendering
+
+Title | Authors | Link
+---|---|----
+Production Volume Rendering | Fong et al. | [Link](https://graphics.pixar.com/library/ProductionVolumeRendering/paper.pdf)
+Real-time Cloud Rendering | Harris and Lastra | [Link](http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=1F20E55E2064E64B253A62FD30CEBEF9?doi=10.1.1.17.2030&rep=rep1&type=pdf)
+Monte Carlo Methods for Volumetric Light Transport Simulation | Novak et al. | [Link](https://jo.dreggn.org/home/2018_volumestar.pdf)
+
 ## Unsorted
 
 Title | Authors | Link
@@ -218,3 +235,4 @@ Symmetry and Orbit Detection via Lie-Algebra Voting | Shi et al. | [Link](http:/
 Procedural Noise using Sparse Gabor Convolution | Lagae et al. | [Link](http://www-sop.inria.fr/reves/Basilic/2009/LLDD09/LLDD09PNSGC_paper.pdf)
 Improved Alpha-Tested Magnification for Vector Textures and Special Effects | Green | [Link](http://www.valvesoftware.com/publications/2007/SIGGRAPH2007_AlphaTestedMagnification.pdf)
 Wavelet Noise | Cook and DeRose | [Link](http://graphics.pixar.com/library/WaveletNoise/paper.pdf)
+Weighted Blended Order-Independent Transparency | McGuire and Bavoil | [Link](http://jcgt.org/published/0002/02/09/paper.pdf)
