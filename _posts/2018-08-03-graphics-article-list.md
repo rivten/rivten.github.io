@@ -103,7 +103,7 @@ Imperfect Shadow Maps for Efficient Computation of Indirect Illumination | Ritsc
 Real-Time, All-Frequency Shadows in Dynamic Scenes | Annen et al. | [Link](http://discovery.ucl.ac.uk/10005/1/10005.pdf)
 Percentage-Closer Soft Shadows | Fernando | [Link](http://developer.download.nvidia.com/shaderlibrary/docs/shadow_PCSS.pdf)
 Stochastic Soft Shadow Mapping | Liktor et al. | [Link](http://cg.ivd.kit.edu/publications/2015/sssm/StochasticSoftShadows.pdf)
-Variance Shadow Mapping | Myers | [Link](http://developer.download.nvidia.com/SDK/10.5/direct3d/Source/VarianceShadowMapping/Doc/VarianceShadowMapping.pdf)
+Variance Shadow Mapping | Donnelly and Lauritzen | [Link](http://www.punkuser.net/vsm/vsm_paper.pdf)
 Adaptative Volumetric Shadow Maps | Salvi et al. | [Link](https://software.intel.com/sites/default/files/salvi_avsm_egsr2010.pdf)
 
 ## Rendering
@@ -236,3 +236,4 @@ Procedural Noise using Sparse Gabor Convolution | Lagae et al. | [Link](http://w
 Improved Alpha-Tested Magnification for Vector Textures and Special Effects | Green | [Link](http://www.valvesoftware.com/publications/2007/SIGGRAPH2007_AlphaTestedMagnification.pdf)
 Wavelet Noise | Cook and DeRose | [Link](http://graphics.pixar.com/library/WaveletNoise/paper.pdf)
 Weighted Blended Order-Independent Transparency | McGuire and Bavoil | [Link](http://jcgt.org/published/0002/02/09/paper.pdf)
+Separable Subsurface Scattering | Jimenez et al. | [Link](http://iryoku.com/separable-sss/downloads/Separable-Subsurface-Scattering.pdf)
