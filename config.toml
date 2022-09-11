@@ -20,3 +20,4 @@ description = "stuff"
 identifier = "about"
 name = "about"
 url = "/about/"
+weight = 10
