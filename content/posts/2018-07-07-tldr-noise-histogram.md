@@ -4,6 +4,7 @@ title:  "TL;DR of the paper 'High-Performance Procedural Noise using a Histogram
 date:   2018-07-07
 tags: ['tldr', 'graphics', 'noise', 'texture']
 author: "Hugo Viala"
+mathjax: true
 ---
 
 Inspired by the work of [Eric Arnebäck](https://twitter.com/erkaman2), I wanted to try my own TLDR of graphics acamedic papers. In here, I want to describe the work of Eric Heitz and Fabrice Neyet in the paper [High-Performance Procedural Noise using a Histogram-Preserving Blending Operator](https://hal.inria.fr/hal-01824773/document). Please note that the images are directly taken from the paper and are not mine.

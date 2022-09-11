@@ -4,6 +4,7 @@ title:  "Article Study : Surface Simplification using Quadric Error Metrics"
 date:   2016-11-05
 tags: ['article', 'mesh', 'simplification', 'decimation', 'quadric', 'computer graphics']
 author: "Hugo Viala"
+mathjax: true
 ---
 
 # An article study series ?

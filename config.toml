@@ -1,0 +1,22 @@
+baseURL = 'https://rivten.github.io/'
+languageCode = 'en-us'
+title = 'rivten - blog'
+theme = 'risotto'
+sectionPagesMenu = "main"
+
+[params]
+noindex = false
+
+[params.theme]
+palette = "srcery-dark"
+mode = "dark-mode"
+
+[params.about]
+title = "rivten"
+description = "stuff"
+
+[menu]
+[[menu.main]]
+identifier = "about"
+name = "about"
+url = "/about/"
