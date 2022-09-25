@@ -7,9 +7,6 @@
 </span></span><span style=display:flex><span>[<span style=color:#a6e22e>push</span>]
 </span></span><span style=display:flex><span>    <span style=color:#a6e22e>default</span> = <span style=color:#a6e22e>current</span>
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>[<span style=color:#a6e22e>checkout</span>]
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>default</span> = <span style=color:#a6e22e>upstream</span>
-</span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>[<span style=color:#a6e22e>remote</span> <span style=color:#e6db74>&#34;fork&#34;</span>]
 </span></span><span style=display:flex><span>    <span style=color:#a6e22e>url</span> = <span style=color:#75715e># fork_url</span>
 </span></span><span style=display:flex><span>    <span style=color:#75715e># stuff</span>
@@ -29,11 +26,8 @@
 </span></span><span style=display:flex><span><span style=color:#75715e># more branch configurations…</span>
 </span></span></code></pre></div><p>Then the working process is pretty simple. Of course, you can use your own alias for all of those.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git switch master
 </span></span><span style=display:flex><span>git pull <span style=color:#75715e># get changes from upstream</span>
+</span></span><span style=display:flex><span>git push <span style=color:#75715e># push the changes from the original repo to the fork</span>
 </span></span><span style=display:flex><span>git switch -c a-new-branch
 </span></span><span style=display:flex><span><span style=color:#75715e># do changes, commits</span>
-</span></span><span style=display:flex><span>git push -v --set-upstream
-</span></span><span style=display:flex><span><span style=color:#75715e># only for the first push, after that you can do</span>
-</span></span><span style=display:flex><span>git push
-</span></span><span style=display:flex><span><span style=color:#75715e># if you `git pull` in a branch that is not master,</span>
-</span></span><span style=display:flex><span><span style=color:#75715e># you will pull from the forked !</span>
+</span></span><span style=display:flex><span>git push <span style=color:#75715e># already pushed to the fork</span>
 </span></span></code></pre></div><p>This might not be the most optimized way, and I would be happy to be shown even more simpler way to have this sort of workflow.</p><p>Enjoy !</p></div><footer class=content__footer></footer></section><section class=page__aside><div class=aside__about><div class=aside__about><h1 class=about__title>rivten</h1><p class=about__description>stuff</p></div><ul class=aside__social-links></ul></div><hr><div class=aside__content><p>2022-09-25</p></div></section><footer class=page__footer><p class=copyright></p><p class=advertisement>Powered by <a href=https://gohugo.io/>hugo</a> and <a href=https://github.com/joeroe/risotto>risotto</a>.</p></footer></div></body></html>
