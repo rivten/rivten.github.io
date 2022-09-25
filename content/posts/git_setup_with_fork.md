@@ -1,5 +1,5 @@
 ---
-title: "Git_setup_with_fork"
+title: "Git setup with fork"
 date: 2022-09-25T19:19:37+02:00
 ---
 
@@ -41,16 +41,18 @@ Here's what could look like the `.git/config` file of a git repository
 # more branch configurations…
 ```
 
-Then the working process is pretty simple.
+Then the working process is pretty simple. Of course, you can use your own alias for all of those.
 
 ```bash
 git switch master
 git pull # get changes from upstream
 git switch -c a-new-branch
 # do changes, commits
-git push -v --set-upstream # only for the first push, after that you can do
+git push -v --set-upstream
+# only for the first push, after that you can do
 git push
-# if you `git pull` in a branch that is not master, you will pull from the forked !
+# if you `git pull` in a branch that is not master,
+# you will pull from the forked !
 ```
 
 This might not be the most optimized way, and I would be happy to be shown even more simpler way to have this sort of workflow.
