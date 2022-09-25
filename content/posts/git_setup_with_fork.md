@@ -19,9 +19,6 @@ Here's what could look like the `.git/config` file of a git repository
 [push]
     default = current
 
-[checkout]
-    default = upstream
-
 [remote "fork"]
     url = # fork_url
     # stuff
@@ -46,13 +43,10 @@ Then the working process is pretty simple. Of course, you can use your own alias
 ```bash
 git switch master
 git pull # get changes from upstream
+git push # push the changes from the original repo to the fork
 git switch -c a-new-branch
 # do changes, commits
-git push -v --set-upstream
-# only for the first push, after that you can do
-git push
-# if you `git pull` in a branch that is not master,
-# you will pull from the forked !
+git push # already pushed to the fork
 ```
 
 This might not be the most optimized way, and I would be happy to be shown even more simpler way to have this sort of workflow.
