@@ -17,7 +17,7 @@ I love complex technical challenges as much as creative endeavours.
 
 On this blog you can learn more about projects I am currently working on, and articles I liked.
 I enjoy watching [Handmade Hero](https://handmadehero.org).
-You can find my resume [here](hugo_viala_resume.pdf).
+You can find my (old) resume [here](hugo_viala_resume.pdf).
 Feel free to contact me if you have any questions.
 
 *Key experiences*
