@@ -20,8 +20,6 @@ I enjoy watching [Handmade Hero](https://handmadehero.org).
 You can find my resume [here](hugo_viala_resume.pdf).
 Feel free to contact me if you have any questions.
 
-![](hugo_circle.png)
-
 *Key experiences*
 
 * 2013 - 2017 : Mathematics and computer science studies at [École polytechnique](https://www.polytechnique.edu/en).
