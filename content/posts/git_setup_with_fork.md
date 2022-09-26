@@ -46,7 +46,7 @@ git pull # get changes from upstream
 git push # push the changes from the original repo to the fork
 git switch -c a-new-branch
 # do changes, commits
-git push # already pushed to the fork
+git push --set-upstream # set-upstream is only needed the first time
 ```
 
 This might not be the most optimized way, and I would be happy to be shown even more simpler way to have this sort of workflow.
