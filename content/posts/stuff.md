@@ -15,4 +15,6 @@ This is link that I find useful.
 * [Beej's Guide to Network Programming](https://beej.us/guide/bgnet/)
 * [Faultlore's blog](https://faultlore.com/blah/)
 * [Fabian Giesen's blog](https://fgiesen.wordpress.com/)
-
+* [Floooh's blog](https://floooh.github.io)
+* [Bruce Dawson's blog](https://randomascii.wordpress.com/)
+* [Bitsquid's blog](http://bitsquid.blogspot.com/)
