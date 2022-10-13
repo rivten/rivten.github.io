@@ -52,6 +52,15 @@ So for example, the `curl` command would become:
 curl -X GET http://host.com/submit.php?name=Alphonse&surname=Fonfon
 ```
 
+And here is the HTTP request that will be sent.
+
+```http
+GET /submit.php?name=Alphonse&surname=Fonfon HTTP/1.1
+Host: host.com
+User-Agent: curl/7.85.0
+Accept: */*
+```
+
 Pretty simple, eh ?
 
 # POST
@@ -62,7 +71,21 @@ Then, there is the good old JSON-way. Or XML, or any format like that really. Ju
 
 ```bash
 curl -X POST -H "Content-Type: application/json" \
-    -d '{"name": "Alphonse"}' http://host.com/submit.php
+    -d '{"name": "Alphonse", "surname": "Fonfon"}' \
+    http://host.com/submit.php
+```
+
+The requests may look like this.
+
+```http
+POST /submit.php HTTP/1.1
+Host: host.com
+User-Agent: curl/7.85.0
+Content-Type: application/json
+Content-Length: 38
+Accept: application/json, */*
+
+{"name":"Alphonse","surname":"FonFon"}
 ```
 
 But now… as we learned previously, there are two other MIME types that can come from form submissions: `application/x-www-form-urlencoded` and `multipart/form-data`. So, here we go.
