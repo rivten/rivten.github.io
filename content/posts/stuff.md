@@ -5,7 +5,7 @@ draft: false
 tag: ['tech', 'en']
 ---
 
-This is link that I find useful.
+These are links that I find useful.
 
 * [About io_uring](https://unixism.net/loti/)
 * [Julia Evan's blog](https://jvns.ca/)
@@ -18,3 +18,5 @@ This is link that I find useful.
 * [Floooh's blog](https://floooh.github.io)
 * [Bruce Dawson's blog](https://randomascii.wordpress.com/)
 * [Bitsquid's blog](http://bitsquid.blogspot.com/)
+* [Eli Bendersky's blog](https://eli.thegreenplace.net/archives/all)
+* [John Regehr's blog](https://blog.regehr.org/)
