@@ -48,8 +48,7 @@ In any case, the form data are appended into the `action` url, starting with `?`
 So for example, the `curl` command would become: 
 
 ```bash
-# actually "-X GET" is not required here
-curl -X GET http://host.com/submit.php?name=Alphonse&surname=Fonfon
+curl http://host.com/submit.php?name=Alphonse&surname=Fonfon
 ```
 
 And here is the HTTP request that will be sent.
@@ -70,7 +69,7 @@ Now. Say you want to POST data to a website. First of all, of COURSE you can che
 Then, there is the good old JSON-way. Or XML, or any format like that really. Just stick `Content-Type: application/json` (for JSON) in the request header and BAM. You've done it.
 
 ```bash
-curl -X POST -H "Content-Type: application/json" \
+curl -H "Content-Type: application/json" \
     -d '{"name": "Alphonse", "surname": "Fonfon"}' \
     http://host.com/submit.php
 ```
@@ -112,7 +111,7 @@ name=Alphonse&surname=FonFon
 And to invoke with `curl`:
 
 ```bash
-curl -X POST \
+curl \
     -d name=Alphonse -d surname=Fonfon \
     http://host.com/submit.php
 ```
@@ -163,7 +162,7 @@ Now, why don't we *always* send data with `multipart/form-data` ? Well the bound
 Phew. Finally, and to conclude, this is how to send `multipart/form-data` with `curl`.
 
 ```bash
-curl -X POST \
+curl \
     -F name=Alphonse -F file=@file/on/my/system.txt \
     http://host.com/submit.php
 ```
