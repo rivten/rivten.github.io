@@ -157,6 +157,7 @@ samp {
     background: var(--dark-bg) !important;
     font-family: var(--font-monospace);
     color: var(--srcery-white);
+    font-size: 1rem;
 }
 
 pre {
