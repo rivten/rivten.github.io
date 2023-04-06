@@ -13,7 +13,7 @@ mode = "dark-mode"
 
 [params.about]
 title = "rivten"
-description = "stuff"
+description = "stuck here"
 
 [menu]
 [[menu.main]]
