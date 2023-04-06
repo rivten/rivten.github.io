@@ -4,6 +4,10 @@ title = 'rivten - blog'
 theme = 'risotto'
 sectionPagesMenu = "main"
 
+[markup]
+[markup.highlight]
+noClasses = false
+
 [params]
 noindex = false
 
