@@ -1,14 +1,21 @@
 /* Fonts */
+
+@font-face {
+    font-family: "xcharter";
+    font-style: normal;
+    font-weight: 600;
+    src: url("/fonts/xcharter-regular.woff2") format("woff2");
+}
+
 :root {
     --font-monospace: "Fira Mono", monospace;
-    --font-text: "Georgia";
+    --font-text: "xcharter";
 }
 
 body {
-    /*font-family: var(--font-text);*/
-    /*font-size: 21px;*/
-    /*font-size: 1rem;*/
-    line-height: 1.5rem;
+    font-family: var(--font-text);
+    font-size: 1.2rem;
+    line-height: 1.6rem;
 }
 
 /* Headings */
@@ -149,7 +156,7 @@ kbd,
 samp {
     background: var(--dark-bg) !important;
     font-family: var(--font-monospace);
-    color: var(--bright-bg);
+    color: var(--srcery-white);
 }
 
 pre {
@@ -167,7 +174,7 @@ strong {
 /* Highlighting */
 ::selection,
 mark {
-    background-color: var(--yellow);
+    background-color: var(--srcery-yellow);
     color: var(--bg);
 }
 

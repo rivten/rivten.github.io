@@ -8,6 +8,7 @@
 }
 
 .main-nav li {
+    font-family: var(--font-monospace);
     margin-left: 2.5rem;
     text-transform: lowercase;
 }

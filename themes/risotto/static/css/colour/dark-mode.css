@@ -1,7 +1,7 @@
 :root {
-    --bg: var(--black);
-    --dark-bg: var(--dark-black);
-    --bright-bg: var(--bright-black);
-    --fg: var(--white);
-    --bright-fg: var(--bright-white);
+    --bg: var(--srcery-black);
+    --dark-bg: var(--srcery-black);
+    --bright-bg: var(--srcery-bright-black);
+    --fg: var(--srcery-bright-white);
+    --bright-fg: var(--srcery-white);
 }
