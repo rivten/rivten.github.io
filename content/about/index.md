@@ -4,8 +4,6 @@ date: "2022-09-11"
 author: "rivten"
 ---
 
-## About me
-
 Hello ! My name is Hugo.
 
 I am a 30 year-old programmer interested in video game-development and related topics.
