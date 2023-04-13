@@ -20,3 +20,4 @@ These are links that I find useful.
 * [Bitsquid's blog](http://bitsquid.blogspot.com/)
 * [Eli Bendersky's blog](https://eli.thegreenplace.net/archives/all)
 * [John Regehr's blog](https://blog.regehr.org/)
+* [Preshing's blog](https://preshing.com/)
